@@ -1,8 +1,8 @@
 
 import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { Engine, ISourceOptions } from "@tsparticles/engine";
 import { useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim";
-import { Engine, ISourceOptions } from "@tsparticles/engine";
 
 
 

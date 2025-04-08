@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
-import Typewriter from "typewriter-effect";
 import { Button } from "@/components/ui/button";
 import ParticlesComponent from "./Particles";
+import Typewriter from "./Typewriter";
+import Link from "next/link";
 
 export default function Hero() {
 
@@ -20,25 +20,23 @@ export default function Hero() {
                     Salut, je suis{" "}
                     <span className="text-primary">
                         <Typewriter
-                            options={{
-                                strings: [
-                                    "Martial Ahadji",
-                                    "Software Architect",
-                                    "Développeur Full Stack",
-                                    "Innovateur",
-                                    "UI/UX Designer",
-                                    "#Madridista",
-                                ],
-                                autoStart: true,
-                                loop: true,
-                                delay: 85,
-                                deleteSpeed: 50,
-                            }}
+                            words={[
+                                "Martial Ahadji",
+                                "Développeur",
+                                "Data",
+                                "Software Architect",
+                                "Innovateur",
+                                "UI/UX Designer",
+                                "#Madridista",
+                            ]}
+                            typingSpeed={75}
+                            deletingSpeed={50}
+                            pauseDuration={1000}
                         />
                     </span>
                 </h1>
                 <p className="text-xl md:text-2xl mb-6">
-                    Je bâtis des solutions digitales qui transforment l'Afrique.
+                    Je bâtis des solutions digitales qui transforment l&apos;Afrique.
                 </p>
                 <div className="flex justify-center gap-4">
                     <Button asChild variant="default" className="btn btn-primary">
