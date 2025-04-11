@@ -22,15 +22,13 @@ export default function Hero() {
                         <Typewriter
                             words={[
                                 "Martial Ahadji",
-                                "Développeur",
-                                "Data",
+                                "Développeur Fullstack",
                                 "Software Architect",
                                 "Innovateur",
-                                "UI/UX Designer",
                                 "#Madridista",
                             ]}
-                            typingSpeed={75}
-                            deletingSpeed={50}
+                            typingSpeed={100}
+                            deletingSpeed={100}
                             pauseDuration={1000}
                         />
                     </span>

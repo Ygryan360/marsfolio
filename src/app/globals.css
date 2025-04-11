@@ -4,3 +4,7 @@
 @plugin "daisyui" {
   themes: forest --default;
 }
+
+html {
+  scroll-behavior: smooth;
+}
